@@ -1,24 +1,22 @@
 <template>
   <main class="main-body">
-    <Carrousel />
-    <Cards />
+    <Register/>
   </main>
 </template>
 
 <script>
-import Carrousel from '../components/Carrousel.vue';
-import Cards from '../components/Cards.vue';
-import json from '../json/products.json';
 
+import Register from '../components/Register.Vue';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default {
-  name: 'HomeView',
+  name: 'RegisterView',
   components: {
-    Carrousel,
-    Cards
-},
+    Register
+  },
   data() {
     return {
-      products: json.products
+      email: '',
+      password: ''
     };
   },
   computed: {
@@ -28,11 +26,23 @@ export default {
 
   },
   methods: {
+    register() {
+      const auth = getAuth();
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
 
+    }
   }
 
 }
 </script>
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

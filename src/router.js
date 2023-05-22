@@ -10,7 +10,7 @@
      { path: '/:pathMatch(.*)*',name:'NotFound', component: NotFoundView },
      { path: '/login', component: LoginView },
      { path: '/register', component: RegisterView },
-     { path: '/product', component: ProductView },
+     { path: '/product/:id', component: ProductView },
  ]
  const router = createRouter({history: createWebHistory(), routes})
  export default router

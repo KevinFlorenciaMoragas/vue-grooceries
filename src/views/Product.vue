@@ -1,20 +1,19 @@
 <template>
     <main class="main-body">
-      <Carrousel />
-      <Cards />
+      <Products/>
     </main>
   </template>
   
   <script>
   import Carrousel from '../components/Carrousel.vue';
   import Cards from '../components/Cards.vue';
+  import Products from '../components/Products.vue';
   import json from '../json/products.json';
   
   export default {
     name: 'HomeView',
     components: {
-      Carrousel,
-      Cards
+      Products
   },
     data() {
       return {

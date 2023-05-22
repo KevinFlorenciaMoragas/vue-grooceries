@@ -35,7 +35,12 @@ export default {
     this.products = json.products;
   },
   methods: {
-
+    goToProducts(){
+      this.$router.push({
+        name: 'ProductView',
+        params: {id}
+      });
+    }
   }
 
 }

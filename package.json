@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
-    "firebase": "^9.17.2",
+    "firebase": "^9.22.0",
     "fortawesome": "^0.0.1-security",
     "sass": "^1.58.3",
     "vue": "^3.3.2",

@@ -13,7 +13,7 @@
  
 <script>
 export default {
-    name: 'Newsletter',
+    name: 'Notfound',
     components: {
     }
 }

@@ -3,6 +3,7 @@
  
     <Carrousel :products="products"/>
     <Cards :products="products"/>
+    <Newsletter/>
   </main>
 </template>
 
@@ -10,12 +11,14 @@
 import Carrousel from '../components/Carrousel.vue';
 import Cards from '../components/Cards.vue';
 import json from '../json/products.json';
+import Newsletter from '../components/Newsletter.vue';
 
 export default {
   name: 'HomeView',
   components: {
     Carrousel,
-    Cards
+    Cards,
+    Newsletter
 },
   data() {
     console.log(json.products);

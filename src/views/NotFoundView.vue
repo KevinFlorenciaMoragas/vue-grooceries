@@ -9,7 +9,7 @@
   import json from '../json/products.json';
   
   export default {
-    name: 'HomeView',
+    name: 'NotFoundView',
     components: {
       NotFound
   },

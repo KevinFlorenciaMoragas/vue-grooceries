@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <HomeView />
+  <router-view />
   <AppFooter />
 </template>
 
@@ -8,6 +8,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import HomeView from "./views/HomeView.vue";
+
 
 export default {
   name: 'App',
